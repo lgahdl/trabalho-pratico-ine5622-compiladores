@@ -1,0 +1,150 @@
+[
+  {
+    "name": "ABRECOLCHETE",
+    "regex": "/[{]{1}/"
+  },
+  {
+    "name": "FECHACOLCHETE",
+    "regex": "/[}]{1}/"
+  },
+  {
+    "name": "ABREPARENTESES",
+    "regex": "/[(]{1}/"
+  },
+  {
+    "name": "FECHAPARENTESES",
+    "regex": "/[)]{1}/"
+  },
+  {
+    "name": "ABRECHAVE",
+    "regex": "/[{]{1}/"
+  },
+  {
+    "name": "FECHACHAVE",
+    "regex": "/[(]{1}/"
+  },
+  {
+    "name": "VIRGULA",
+    "regex": "/[(]{1}/"
+  },
+  {
+    "name": "PONTOEVIRGULA",
+    "regex": "/[(]{1}/"
+  },
+  {
+    "name": "MAIOROUIGUAL",
+    "regex": "/[(]{1}/"
+  },
+  {
+    "name": "MENOROUIGUAL",
+    "regex": "/[(]{1}/"
+  },
+  {
+    "name": "MENOR",
+    "regex": "/[(]{1}/"
+  },
+  {
+    "name": "MAIOR",
+    "regex": "/[(]{1}/"
+  },
+  {
+    "name": "IGUAL",
+    "regex": "/[(]{1}/"
+  },
+  {
+    "name": "DIFERENTE",
+    "regex": "/[(]{1}/"
+  },
+  {
+    "name": "ATRIBUICAO",
+    "regex": "/[(]{1}/"
+  },
+  {
+    "name": "MAIS",
+    "regex": "/[(]{1}/"
+  },
+  {
+    "name": "MENOS",
+    "regex": "/[(]{1}/"
+  },
+  {
+    "name": "MULTIPLICACAO",
+    "regex": "/[(]{1}/"
+  },
+  {
+    "name": "DIVISAO",
+    "regex": "/[(]{1}/"
+  },
+  {
+    "name": "RESTO",
+    "regex": "/[(]{1}/"
+  },
+  {
+    "name": "DEF",
+    "regex": "/[(]{1}/"
+  },
+  {
+    "name": "INT",
+    "regex": "/[(]{1}/"
+  },
+  {
+    "name": "FLOAT",
+    "regex": "/[(]{1}/"
+  },
+  {
+    "name": "STRING",
+    "regex": "/[(]{1}/"
+  },
+  {
+    "name": "IF",
+    "regex": "/[(]{1}/"
+  },
+  {
+    "name": "ELSE",
+    "regex": "/[(]{1}/"
+  },
+  {
+    "name": "FOR",
+    "regex": "/[(]{1}/"
+  },
+  {
+    "name": "PRINT",
+    "regex": "/[(]{1}/"
+  },
+  {
+    "name": "READ",
+    "regex": "/[(]{1}/"
+  },
+  {
+    "name": "BREAK",
+    "regex": "/[(]{1}/"
+  },
+  {
+    "name": "RETURN",
+    "regex": "/[(]{1}/"
+  },
+  {
+    "name": "NULL",
+    "regex": "/[(]{1}/"
+  },
+  {
+    "name": "NEW",
+    "regex": "/[(]{1}/"
+  },
+  {
+    "name": "VARINT",
+    "regex": "/[(]{1}/"
+  },
+  {
+    "name": "VARFLOAT",
+    "regex": "/[(]{1}/"
+  },
+  {
+    "name": "VARSTRING",
+    "regex": "/[(]{1}/"
+  },
+  {
+    "name": "ID",
+    "regex": "/[(]{1}/"
+  }
+]
