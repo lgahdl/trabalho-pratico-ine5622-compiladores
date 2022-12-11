@@ -9,7 +9,10 @@ export function getAllIndexes(arr, val) {
 export function splitArrayOnIndexes(array, indexes) {
   const result = []
   for (let i = 0; i <= indexes.length; i++) {
-    if (i === 0) {
+    if(indexes.length === 0){
+      result[i] = array;
+    }
+    else if (i === 0) {
       result[i] = array.slice(0, indexes[0] + 1);
       continue;
     } else if (i === indexes.length) {

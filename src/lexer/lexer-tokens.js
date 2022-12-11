@@ -1,151 +1,151 @@
 const lexerTokens = [
   {
-    "name": "VARSTRING",
+    "name": "string_constant",
     "regex": /"[^"]*"/g
   },
   {
-    "name": "ABRECOLCHETE",
+    "name": "[",
     "regex": /\[/g
   },
   {
-    "name": "FECHACOLCHETE",
+    "name": "]",
     "regex": /]/g
   },
   {
-    "name": "ABREPARENTESES",
+    "name": "(",
     "regex": /\(/g
   },
   {
-    "name": "FECHAPARENTESES",
+    "name": ")",
     "regex": /\)/g
   },
   {
-    "name": "ABRECHAVE",
+    "name": "{",
     "regex": /{/g
   },
   {
-    "name": "FECHACHAVE",
+    "name": "}",
     "regex": /}/g
   },
   {
-    "name": "VIRGULA",
+    "name": ",",
     "regex": /,/g
   },
   {
-    "name": "PONTOEVIRGULA",
+    "name": ";",
     "regex": /;/g
   },
   {
-    "name": "MAIOROUIGUAL",
+    "name": ">=",
     "regex": />=/g
   },
   {
-    "name": "MENOROUIGUAL",
+    "name": "<=",
     "regex": /<=/g
   },
   {
-    "name": "MENOR",
+    "name": "<",
     "regex": /</g
   },
   {
-    "name": "MAIOR",
+    "name": ">",
     "regex": />/g
   },
   {
-    "name": "IGUAL",
+    "name": "==",
     "regex": /==/g
   },
   {
-    "name": "DIFERENTE",
+    "name": "!=",
     "regex": /!=/g
   },
   {
-    "name": "ATRIBUICAO",
+    "name": "=",
     "regex": /=/g
   },
   {
-    "name": "MAIS",
+    "name": "+",
     "regex": /\+/g
   },
   {
-    "name": "MENOS",
+    "name": "-",
     "regex": /-/g
   },
   {
-    "name": "MULTIPLICACAO",
+    "name": "*",
     "regex": /\*/g
   },
   {
-    "name": "DIVISAO",
+    "name": "/",
     "regex": /\//g
   },
   {
-    "name": "RESTO",
+    "name": "%",
     "regex": /%/g
   },
   {
-    "name": "DEF",
+    "name": "def",
     "regex": /\bdef\b/g
   },
   {
-    "name": "INT",
+    "name": "int",
     "regex": /\bint\b/g
   },
   {
-    "name": "FLOAT",
+    "name": "float",
     "regex": /\bfloat\b/g
   },
   {
-    "name": "STRING",
+    "name": "string",
     "regex": /\bstring\b/g
   },
   {
-    "name": "IF",
+    "name": "if",
     "regex": /\bif\b/g
   },
   {
-    "name": "ELSE",
+    "name": "else",
     "regex": /\belse\b/g
   },
   {
-    "name": "FOR",
+    "name": "for",
     "regex": /\bfor\b/g
   },
   {
-    "name": "PRINT",
+    "name": "print",
     "regex": /\bprint\b/g
   },
   {
-    "name": "READ",
+    "name": "read",
     "regex": /\bread\b/g
   },
   {
-    "name": "BREAK",
+    "name": "break",
     "regex": /\bbreak\b/g
   },
   {
-    "name": "RETURN",
+    "name": "return",
     "regex": /\breturn\b/g
   },
   {
-    "name": "NULL",
+    "name": "null",
     "regex": /\bnull\b/g
   },
   {
-    "name": "NEW",
+    "name": "new",
     "regex": /\bnew\b/g
   },
   {
-    "name": "VARFLOAT",
-    "regex": /[0-9]*\.[0-9]+/g
+    "name": "float_constant",
+    "regex": /\b[0-9]*\.[0-9]+\b/g
   },
   {
-    "name": "VARINT",
-    "regex": /[0-9]+/g
+    "name": "int_constant",
+    "regex": /\b[0-9]+\b/g
   },
   {
-    "name": "ID",
-    "regex": /\b[A-Za-z]+\b/g
+    "name": "ident",
+    "regex": /^\b[A-Za-z]+\b$/g
   }
 ]
 

@@ -1,12 +1,15 @@
 import lexerTokens from './lexer-tokens'
 
 const lexer = (text) => {
+  
   let resultText = text;
   const tableOfSymbols = {}
-  const matchesByToken = { "ID": [], "DESCONHECIDO": [] }
-
+  //VARIÁVEL DE MATCHES NECESSÁRIA PARA CRIAÇÃO DO RESULTADO COM RELAÇÃO ORDENADA ENTRE O TOKEN E AS PALAVRA IDENTIFICADAS POR ELE
+  const matchesByToken = { "ident": [], "DESCONHECIDO": [] }
+  
+  //INICIA ANÁLISE DE TODOS OS TOKENS, EXCETO OS IDENTIFICADORES
   lexerTokens.forEach(({ name, regex }) => {
-    if (name === "ID") {
+    if (name === "ident") {
       return;
     }
     matchesByToken[name] = [...resultText.matchAll(regex)].map(([v]) => v);
@@ -16,18 +19,26 @@ const lexer = (text) => {
 
   const arrayOfTokens = resultText.split(/\s+/).filter((value) => !!value);
 
+  //INICIA ANÁLISE DOS IDENTIFICADORES
   const arrayOfTokensWithIDAndUnknown = arrayOfTokens.map((token, index) => {
     if (lexerTokensNames.includes(token)) {
       return token;
     }
-    if (token.match(lexerTokens.find(({ name }) => name === "ID").regex)) {
-      matchesByToken["ID"] = [...matchesByToken["ID"], token]
+    if (token.match(lexerTokens.find(({ name }) => name === "ident").regex)?.length === 1) {
+      matchesByToken["ident"] = [...matchesByToken["ident"], token]
       if (tableOfSymbols[token]) {
         tableOfSymbols[token].numberOfOccurrences += 1;
       } else {
-        tableOfSymbols[token] = { numberOfOccurrences: 1, varType: arrayOfTokens[index - 1] }
+        tableOfSymbols[token] = {
+          numberOfOccurrences: 1,
+          varType: ["int", "float", "string"].includes(arrayOfTokens[index - 1])
+            ? arrayOfTokens[index - 1]
+            : arrayOfTokens[index - 1] === "def"
+              ? "function"
+              : "UNDEFINED"
+        }
       }
-      return "ID";
+      return "ident";
     }
     matchesByToken["DESCONHECIDO"] = [...matchesByToken["DESCONHECIDO"], token];
     return `DESCONHECIDO`;
