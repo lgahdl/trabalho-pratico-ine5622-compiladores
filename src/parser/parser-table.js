@@ -206,11 +206,19 @@ const parserTable = {
     ";": ""
   },
   R7: {
+    "]": "",
+    ")": "",
     "+": "",
     "-": "",
     "*": "SYMBOL2 UNARYEXPR R7",
     "/": "SYMBOL2 UNARYEXPR R7",
     "%": "SYMBOL2 UNARYEXPR R7",
+    "MAIOROUIGUAL": "",
+    "MENOROUIGUAL": "",
+    "MENOR": "",
+    "MAIOR": "",
+    "IGUAL": "",
+    "DIFERENTE": "",
     ";": ""
   },
   R8: {
