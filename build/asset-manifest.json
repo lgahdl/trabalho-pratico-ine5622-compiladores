@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/trabalho-pratico-ine5622-compiladores/static/css/main.756af292.css",
-    "main.js": "/trabalho-pratico-ine5622-compiladores/static/js/main.b2eea773.js",
+    "main.js": "/trabalho-pratico-ine5622-compiladores/static/js/main.23a1e570.js",
     "static/js/787.2df0f164.chunk.js": "/trabalho-pratico-ine5622-compiladores/static/js/787.2df0f164.chunk.js",
     "index.html": "/trabalho-pratico-ine5622-compiladores/index.html",
     "main.756af292.css.map": "/trabalho-pratico-ine5622-compiladores/static/css/main.756af292.css.map",
-    "main.b2eea773.js.map": "/trabalho-pratico-ine5622-compiladores/static/js/main.b2eea773.js.map",
+    "main.23a1e570.js.map": "/trabalho-pratico-ine5622-compiladores/static/js/main.23a1e570.js.map",
     "787.2df0f164.chunk.js.map": "/trabalho-pratico-ine5622-compiladores/static/js/787.2df0f164.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.756af292.css",
-    "static/js/main.b2eea773.js"
+    "static/js/main.23a1e570.js"
   ]
 }
