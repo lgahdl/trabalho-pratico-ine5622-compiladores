@@ -24,9 +24,9 @@ const parserTable = {
   },
   PARAMLIST: {
     ")": "",
-    "int": "TYPE ident R9",
-    "float": "TYPE ident R9",
-    "string": "TYPE ident R9"
+    "int": "TYPE ident R13",
+    "float": "TYPE ident R13",
+    "string": "TYPE ident R13"
   },
   TYPE: {
     "int": "int",
@@ -273,6 +273,10 @@ const parserTable = {
     "*": "",
     "/": "",
     "%": "",
+  },
+  R13: {
+    ")": "",
+    ",": ", PARAMLIST",
   },
   SYMBOL1: {
     "+": "+",
