@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# Analisador Léxico
+&nbsp; O Analisador léxico é uma ferramenta para verificar se as palavras e símbolos escritos são reconhecidos pela gramática.
+<br/>
+## Execução
+&nbsp; A execução da análise léxica é feita digitando o código fonte na primeira caixa de texto, e após o código estar escrito, 
+apertar no botão "Executar análise léxica". O programa irá preencher dois campos de texto, à esquerda estão os tokens 
+identificados pelo analisador, e à direita está o código escrito, ambos elementos dos campos de texto referenciam seus 
+tokens ou palavras.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Analisador Sintático
+&nbsp; O Analisador Sintático é uma ferramenta para verificar se o trecho de código interpretado segue corretamente a gramática
+proposta, os fragmentos de programa contemplam algo que faz sentido e nessa análise já é esclarecido sobre as funcionalidades
+individuais de cada fragmento de código, o sentido total do programa ainda não é possível, já que o sentido semântico foi analisado.
+<br/>
+## Execução
+&nbsp; Para analisar sintaticamente, você precisa antes ter feito uma Análise léxica sobre seu programa, uma vez que o botão
+"Executar Análise Sintática" esteja habilitado, é só clicar e ele formará uma tabela com todas as etapas da análise semântica, 
+à esquerda estão as etapas dos símbolos terminais sendo decompostos, e à direita estão as etapas dos tokens(símbolos não-terminais) 
+sendo um a um interpretado pelo analisador e removido da pilha de tokens.
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Desenvolvedor
+Para rodar o programa em sua máquina, você precisará de node(v14.20.1), abra a pasta do programa no terminal e digite:
+```
+npm install
+```
+```
+npm run start
+```
+O programa deverá rodar na url ```localhost:3000```.
