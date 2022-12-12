@@ -14,6 +14,8 @@ const lexer = (text) => {
     }
     matchesByToken[name] = [...resultText.matchAll(regex)].map(([v]) => v);
     resultText = resultText.replaceAll(regex, ` ${name} `);
+    console.log(name);
+    console.log(resultText)
   })
   const lexerTokensNames = lexerTokens.map(({ name }) => name)
 

@@ -11,6 +11,11 @@ const parser = (lexerResult) => {
     const currentStep = steps[steps.length - 1].split(" ");
     const firstSymbol = currentStep[0];
     const firstToken = tokens[0];
+    if(!firstSymbol){
+      const nextStep = currentStep.join(" ").trim();
+      steps.push(nextStep);
+      continue;
+    }
     if (firstSymbol === firstToken) {
       validTokenCounter++;
       currentStep.shift();

@@ -46,7 +46,7 @@ const lexerTokens = [
   },
   {
     "name": "IGUAL",
-    "regex": /\b==\b/g
+    "regex": /==/g
   },
   {
     "name": "DIFERENTE",
@@ -57,11 +57,11 @@ const lexerTokens = [
     "regex": /=/g
   },
   {
-    "name": "<",
+    "name": "MENOR",
     "regex": /</g
   },
   {
-    "name": ">",
+    "name": "MAIOR",
     "regex": />/g
   },
   {
