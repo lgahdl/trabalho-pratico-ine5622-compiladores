@@ -35,13 +35,26 @@ const lexerTokens = [
     "name": ";",
     "regex": /;/g
   },
+
   {
-    "name": ">=",
+    "name": "MAIOROUIGUAL",
     "regex": />=/g
   },
   {
-    "name": "<=",
+    "name": "MENOROUIGUAL",
     "regex": /<=/g
+  },
+  {
+    "name": "IGUAL",
+    "regex": /\b==\b/g
+  },
+  {
+    "name": "DIFERENTE",
+    "regex": /!=/g
+  },
+  {
+    "name": "ATRIBUICAO",
+    "regex": /=/g
   },
   {
     "name": "<",
@@ -50,18 +63,6 @@ const lexerTokens = [
   {
     "name": ">",
     "regex": />/g
-  },
-  {
-    "name": "==",
-    "regex": /==/g
-  },
-  {
-    "name": "!=",
-    "regex": /!=/g
-  },
-  {
-    "name": "=",
-    "regex": /=/g
   },
   {
     "name": "+",
