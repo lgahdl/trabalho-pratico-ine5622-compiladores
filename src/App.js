@@ -47,6 +47,46 @@ function App() {
     <div className="App pb-5" style={{ overflowX: "hidden" }}>
       <Row className={"px-5"}>
         <Col xs={12}>
+          <div className={"d-flex flex-column"}>
+            <div className={"d-flex flex-row text-center"}>
+              <h6>
+                <b>Nome: </b> Luiz Gustavo Abou Hatem de Liz
+              </h6>
+              &nbsp;
+              <h6>
+                <b>Matrícula: </b> 19100866
+              </h6>
+            </div>
+            <div className={"d-flex flex-row text-center"}>
+              <h6>
+                <b>Nome: </b> Bruno Rafael Machado
+              </h6>
+              &nbsp;
+              <h6>
+                <b>Matrícula: </b> 17100897
+              </h6>
+            </div>
+            <div className={"d-flex flex-row text-center"}>
+              <h6>
+                <b>Nome: </b> Daniel Castagna Santos
+              </h6>
+              &nbsp;
+              <h6>
+                <b>Matrícula: </b> 20100838
+              </h6>
+            </div>
+            <div className={"d-flex flex-row text-center"}>
+              <h6>
+                <b>Nome: </b> Maiko Ademir Nunes
+              </h6>
+              &nbsp;
+              <h6>
+                <b>Matrícula: </b> 21204476
+              </h6>
+            </div>
+          </div>
+        </Col>
+        <Col xs={12}>
           <TextareaAutosize className="mt-5" value={rawText} onChange={({ target: { value } }) => setRawText(value)}
                             style={{ height: "200px", width: "100%", overflowY: "scroll" }}>
           </TextareaAutosize>
